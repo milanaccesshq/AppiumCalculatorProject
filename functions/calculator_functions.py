@@ -7,7 +7,7 @@ Desired Capabilities
 desired_capabilities = {
     "platformName": "Android",
     "deviceName": "Android Emulator",
-    "appPackage":"com.android.calculator2",
+    "appPackage": "com.android.calculator2",
     "appActivity": "com.android.calculator2.Calculator"
 }
 
@@ -35,3 +35,5 @@ def calculator_input(value: str):
 def calculation_clear(length: int):
     for i in range(0, length):
         webdriver.find_element("id", "com.android.calculator2:id/del").click()
+
+
